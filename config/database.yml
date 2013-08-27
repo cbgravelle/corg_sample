@@ -10,7 +10,7 @@ development:
   username: login
   password: corgpg
   host: localhost
-  database: corg2.dev # db/development.postgresql
+  database: corg_sample_dev # db/development.postgresql
   pool: 5
   timeout: 5000
 
@@ -24,14 +24,16 @@ test:
   adapter: postgresql
   username: login
   password: corgpg
-  database: corg2.dev
+  database: corg_sample_test
   pool: 5
   timeout: 5000
 
 production:
 
   adapter: postgresql
-  database: prod
+  username: login
+  password: corgpg
+  database: corg_sample_prod
   pool: 5
   timeout: 5000
 
