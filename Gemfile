@@ -35,7 +35,8 @@ group :doc do
 end
 
 group :development, :test do
-	gem 'rspec-rails', '~> 2.0'
+	# gem 'webrat'
+	gem 'rspec-rails', '2.13.1'
 end
 
 group :test do
