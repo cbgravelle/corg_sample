@@ -43,6 +43,10 @@ group :test do
 	gem 'rspec', '~> 2.0'
 end
 
+# Using Spork to speed up autotesting
+# run with 'bundle exec spork rspec --bootstrap'
+gem 'spork-rails', git: 'git://github.com/koriroys/spork-rails.git'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
