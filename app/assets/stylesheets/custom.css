@@ -1,5 +1,5 @@
 .container {
-	margin: 20px;
+	margin: 20px auto;
 	width: 710px;
 }
 
@@ -110,4 +110,9 @@ footer {
 
 footer nav {
 	float: none;
+}
+
+h1 {
+	font-size: 18px;
+	
 }

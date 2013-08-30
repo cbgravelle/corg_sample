@@ -37,6 +37,8 @@ end
 group :development, :test do
 	gem 'webrat'
 	gem 'rspec-rails', '~> 2.0'
+	# watchr for auto-testing specs
+	gem 'watchr'
 end
 
 group :test do
@@ -46,6 +48,9 @@ end
 # Using Spork to speed up autotesting
 # run with 'bundle exec spork rspec --bootstrap'
 gem 'spork-rails', git: 'git://github.com/koriroys/spork-rails.git'
+
+# test results color-coder with 'redgreen' in test_helper.rb
+# gem 'redgreen', "~> 1.2.2"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
