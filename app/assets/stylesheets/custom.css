@@ -7,6 +7,10 @@ body {
 	background: #eef;
 }
 
+
+/* Header */
+
+
 header {
 	padding-top: 20px;
 }
@@ -76,7 +80,7 @@ nav ul li a:hover {
 	width: 200px;
 }
 
-.sign_up_button {
+.signup_button {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -87,8 +91,17 @@ nav ul li a:hover {
 	font-size: 150%;
 	font-weight: bold;
 	padding: 20px;
-
 }
+
+.signup_button {
+	color: #fff !important ;
+}
+.signup_button:hover {
+	color: #fff !important;
+	background: #005400;
+	text-decoration: none;
+}
+
 
 /* Round Corners*/
 
@@ -107,12 +120,13 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 }
-
+ 
 footer nav {
 	float: none;
 }
 
+/*Headings*/
+
 h1 {
 	font-size: 18px;
-	
 }

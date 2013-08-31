@@ -5,7 +5,7 @@ def run_spec(file)
   end
 
   puts "Running #{file}"
-  system "bundle exec rspec #{file}"
+  system "bundle exec rspec --tty --color #{file}"
   puts
 end
 

@@ -6,6 +6,8 @@ CorgSample::Application.routes.draw do
   get '/contact'  => 'pages#contact' # "pages controller, contact action"
   get '/about'    => 'pages#about'
   get '/help'     => 'pages#help'
+  get '/signup'   => 'users#new'
+
 
   
   # The priority is based upon order of creation: first created -> highest priority.
