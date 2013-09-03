@@ -1,12 +1,15 @@
 CorgSample::Application.routes.draw do
 
+  resources :users
+
   root 'pages#home'
+
   
   get '/'         => 'pages#home'
   get '/contact'  => 'pages#contact' # "pages controller, contact action"
   get '/about'    => 'pages#about'
   get '/help'     => 'pages#help'
-  get '/signup'   => 'users#new'
+  # get '/signup'   => 'users#new'
 
 
   
