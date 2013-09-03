@@ -39,6 +39,7 @@ group :development, :test do
 	gem 'rspec-rails', '~> 2.0'
 	# watchr for auto-testing specs
 	gem 'watchr'
+	gem 'annotate'
 end
 
 group :test do
