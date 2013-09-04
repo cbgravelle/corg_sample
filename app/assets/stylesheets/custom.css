@@ -130,3 +130,13 @@ footer nav {
 h1 {
 	font-size: 18px;
 }
+
+/*User Show Page*/
+
+.gravatar {
+	margin-bottom: -15px;
+}
+
+div.field, div.actions {
+	margin-bottom: 15px;
+}
