@@ -29,8 +29,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-# gem 'strong_parameters'
 gem 'protected_attributes'
+
+gem 'gravatar_image_tag', '0.1.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

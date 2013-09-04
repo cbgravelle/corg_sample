@@ -1,1 +1,6 @@
-<h3><%= @user.name %>, <%=  @user.email %></h3>
+<h2>
+	<%= gravatar_for(@user, :size => 40) %>
+	<%= @user.name %>
+</h2>
+
+<h4><%=  @user.email %></h4>
