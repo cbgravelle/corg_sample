@@ -37,6 +37,12 @@ describe UsersController do
       response.should have_selector('h2>img', :class => "gravatar")
     end
 
+    it "should have the right URL" do
+      get :show, :id => @user
+      response.should have_selector('a', :content => user_path(@user),
+                                          :href    => user_path(@user))
+    end
+
   end
 
   describe "GET 'new'" do
@@ -50,6 +56,7 @@ describe UsersController do
   	get :new
   	response.should have_selector('title', :content => "Sign up")
   end
+
 
 
 end

@@ -3,4 +3,5 @@
 	<%= @user.name %>
 </h2>
 
-<h4><%=  @user.email %></h4>
+<h4><strong>email</strong> <%= @user.email %> </h4> </br>
+<h4><strong>URL</strong> <%= link_to user_path(@user), @user %> </h4> </br>
