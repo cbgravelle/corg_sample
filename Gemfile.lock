@@ -1,9 +1,9 @@
 GIT
-  remote: git://github.com/koriroys/spork-rails.git
-  revision: 355a354e9de328e86a9f3fe306f243745950a7d1
+  remote: git://github.com/sporkrb/spork-rails.git
+  revision: 3224f84d8c31fcb0894e9a43f6c3ac67e3aa0d71
   specs:
     spork-rails (3.2.1)
-      rails (>= 3.0.0)
+      rails (>= 3.0.0, < 5)
       spork (>= 1.0rc0)
 
 GEM

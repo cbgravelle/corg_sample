@@ -21,3 +21,13 @@ D, [2013-09-03T12:56:01.815925 #2160] DEBUG -- : REQUESTING PAGE: GET /about wit
 D, [2013-09-03T12:56:01.827925 #2160] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
 D, [2013-09-03T12:56:01.838926 #2160] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
 D, [2013-09-03T12:56:01.848926 #2160] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-09-04T12:30:44.875399 #9636] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-09-04T12:30:44.947403 #9636] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-09-04T12:30:44.970404 #9636] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2013-09-04T12:30:44.981405 #9636] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2013-09-04T12:30:44.992405 #9636] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-09-04T12:42:24.954441 #8604] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-09-04T12:42:24.964442 #8604] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-09-04T12:42:24.977442 #8604] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2013-09-04T12:42:24.989443 #8604] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2013-09-04T12:42:25.000444 #8604] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}

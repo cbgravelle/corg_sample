@@ -51,7 +51,8 @@ end
 
 # Using Spork to speed up autotesting
 # run with 'bundle exec spork rspec --bootstrap'
-gem 'spork-rails', git: 'git://github.com/koriroys/spork-rails.git'
+gem 'spork-rails', github: 'sporkrb/spork-rails' 
+# gem 'spork-rails', git: 'git://github.com/koriroys/spork-rails.git'
 
 # test results color-coder with 'redgreen' in test_helper.rb
 # gem 'redgreen', "~> 1.2.2"
