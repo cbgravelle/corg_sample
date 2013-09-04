@@ -31,3 +31,8 @@ D, [2013-09-04T12:42:24.964442 #8604] DEBUG -- : REQUESTING PAGE: GET /about wit
 D, [2013-09-04T12:42:24.977442 #8604] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
 D, [2013-09-04T12:42:24.989443 #8604] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
 D, [2013-09-04T12:42:25.000444 #8604] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-09-04T14:07:07.565150 #9452] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-09-04T14:07:07.579150 #9452] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-09-04T14:07:07.590151 #9452] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2013-09-04T14:07:07.602152 #9452] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2013-09-04T14:07:07.613152 #9452] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}

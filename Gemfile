@@ -47,11 +47,13 @@ end
 
 group :test do
 	gem 'rspec', '~> 2.0'
+	gem 'spork-rails', github: 'sporkrb/spork-rails' 
+	gem 'factory_girl_rails', '1.0'
 end
 
 # Using Spork to speed up autotesting
 # run with 'bundle exec spork rspec --bootstrap'
-gem 'spork-rails', github: 'sporkrb/spork-rails' 
+# gem 'spork-rails', github: 'sporkrb/spork-rails' 
 # gem 'spork-rails', git: 'git://github.com/koriroys/spork-rails.git'
 
 # test results color-coder with 'redgreen' in test_helper.rb
