@@ -1,6 +1,7 @@
 CorgSample::Application.routes.draw do
 
   resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
 
   root 'pages#home'
 
@@ -10,6 +11,8 @@ CorgSample::Application.routes.draw do
   get '/about'    => 'pages#about'
   get '/help'     => 'pages#help'
   get '/signup'   => 'users#new'
+  get '/signin'   => 'sessions#new'
+  get '/signout'  => 'sessions#destroy'
 
 
   
