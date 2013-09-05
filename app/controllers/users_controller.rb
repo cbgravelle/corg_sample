@@ -14,9 +14,10 @@ class UsersController < ApplicationController
   def create
   	# raise params[:user].inspect # used for debugging form params
   	@user = User.new(params[:user])
-  	
+
   	if @user.save
-  		
+      flash[:success] = "Welcome to Corg-Sample App!"
+  		redirect_to user_path(@user)
   	else
   		@title = "Sign Up"
   		render 'new'
