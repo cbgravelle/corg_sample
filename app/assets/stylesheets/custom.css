@@ -140,3 +140,11 @@ h1 {
 div.field, div.actions {
 	margin-bottom: 15px;
 }
+
+#error_explanation, #error_explanation h2 {
+	color: red;
+}
+
+.field_with_errors input {
+	border: 2px solid red;
+}

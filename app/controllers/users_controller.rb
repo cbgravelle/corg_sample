@@ -8,7 +8,19 @@ class UsersController < ApplicationController
 
   def new
   	@user = User.new
-  	@title = "Sign up"
+  	@title = "Sign Up"
+  end
+
+  def create
+  	# raise params[:user].inspect # used for debugging form params
+  	@user = User.new(params[:user])
+  	
+  	if @user.save
+  		
+  	else
+  		@title = "Sign Up"
+  		render 'new'
+  	end
   end
 
 end
