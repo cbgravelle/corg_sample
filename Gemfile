@@ -33,6 +33,8 @@ gem 'protected_attributes'
 
 gem 'gravatar_image_tag', '0.1.0'
 
+gem 'will_paginate', '~> 3.0.4'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -41,9 +43,9 @@ end
 group :development, :test do
 	gem 'webrat'
 	gem 'rspec-rails', '~> 2.0'
-	# watchr for auto-testing specs
 	gem 'watchr'
 	gem 'annotate'
+	gem 'faker', '0.3.1'
 end
 
 group :test do
