@@ -148,3 +148,14 @@ div.field, div.actions {
 .field_with_errors input {
 	border: 2px solid red;
 }
+
+ul.users {
+	display: block;
+	margin-top: 1em;
+}
+
+ul.users li {
+	display: block;
+	min-height: 35px;
+	list-style: none;
+}
