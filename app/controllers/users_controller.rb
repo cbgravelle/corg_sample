@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   
+  before_filter :authenticate, :only => [:edit, :update]
 
   def show
   	@user = User.find(params[:id])
@@ -9,7 +10,7 @@ class UsersController < ApplicationController
   def new
   	@user = User.new
   	@title = "Sign Up"
-  end
+  end 
 
   def create
   	# raise params[:user].inspect # used for debugging form params
@@ -39,5 +40,15 @@ class UsersController < ApplicationController
       render 'edit'
     end
   end
+
+  private
+
+    def authenticate
+      deny_access unless signed_in?
+    end
+
+    def deny_access
+      redirect_to signin_path, :notice => "Please sign in to access this page."
+    end
 
 end
