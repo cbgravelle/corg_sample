@@ -190,6 +190,7 @@ describe User do
 				end.should raise_error(ActiveRecord::RecordNotFound)
 			end
 		end
+
 	end
 
 end
