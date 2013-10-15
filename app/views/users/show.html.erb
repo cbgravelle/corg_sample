@@ -2,6 +2,16 @@
 	<%= gravatar_for(@user, :size => 40) %>
 	<%= @user.name %>
 </h2>
+<% if @user.microposts.any? %>
+	<table class="microposts" summary= "User microposts">
+		<%= render @microposts %>
+	</table>
+	<%= will_paginate @microposts %>
+<% end %>
 
-<h4><strong>email</strong> <%= @user.email %> </h4> </br>
-<h4><strong>URL</strong> <%= link_to user_path(@user), @user %> </h4> </br>
+<div class="user_info">
+	<h4><strong>email</strong> <%= @user.email %> </h4> </br>
+	<h4><strong>URL</strong> <%= link_to user_path(@user), @user %> </h4> </br>
+	<strong>Microposts</strong> <%= @user.microposts.count %>
+</div>
+
