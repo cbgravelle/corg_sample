@@ -1,4 +1,23 @@
-<h1>Home page</h1>
-<p>welcome hooooome</p>
+<% if signed_in? %>
 
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+	<table class="front" summary="For signed-in users">
+	<tr>
+		<td>
+			<h1 class="micropost">What's Up?</h1>
+			<%= render 'shared/micropost_form'%>
+		</td>
+		<td class = "sidebar round">
+			<%= render 'shared/user_info' %>
+		</td>
+	</tr>
+	</table
+
+<% else %>
+
+
+	<h1>Home page</h1>
+	<p>welcome hooooome</p>
+
+	<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+
+<% end %>
