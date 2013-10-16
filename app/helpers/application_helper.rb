@@ -23,8 +23,8 @@ module ApplicationHelper
 		if current_user?(user)
 			link_to "delete", input, 
 					:method => :delete, 
-					:confirm => "You sure?",
-					:title => "Delete '" + dotdot(input.content, 30).gsub(/\r\n/, ' ') + "'"
+					:title => "Delete '" + dotdot(input.content, 30).gsub(/\r\n/, ' ') + "'",
+					data: { :confirm => "You sure?" }
 		end
 	end
 
