@@ -35,6 +35,8 @@ gem 'gravatar_image_tag', '0.1.0'
 
 gem 'will_paginate', '~> 3.0.4'
 
+gem 'rails_12factor'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -42,16 +44,14 @@ end
 
 group :development, :test do
 	gem 'webrat'
-	gem 'rspec-rails'
-#	gem 'rspec-rails', '~> 2.0'
+	gem 'rspec-rails', '~> 2.0'
 	gem 'watchr'
 	gem 'annotate'
-#	gem 'faker', '0.3.1'
+	gem 'faker', '0.3.1'
 end
 
 group :test do
-	gem 'rspec'
-#	gem 'rspec', '~> 2.0'
+	gem 'rspec', '~> 2.0'
 	gem 'spork-rails', github: 'sporkrb/spork-rails' 
 	gem 'factory_girl_rails', '1.0'
 	gem 'faker', '0.3.1'
