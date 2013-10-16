@@ -37,6 +37,8 @@ gem 'will_paginate', '~> 3.0.4'
 
 gem 'rails_12factor'
 
+gem 'faker', '0.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -47,7 +49,6 @@ group :development, :test do
 	gem 'rspec-rails', '~> 2.0'
 	gem 'watchr'
 	gem 'annotate'
-	gem 'faker' #, '0.3.1'
 end
 
 group :test do
