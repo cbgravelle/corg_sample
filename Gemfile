@@ -47,14 +47,13 @@ group :development, :test do
 	gem 'rspec-rails', '~> 2.0'
 	gem 'watchr'
 	gem 'annotate'
-	gem 'faker', '0.3.1'
+	gem 'faker' #, '0.3.1'
 end
 
 group :test do
 	gem 'rspec', '~> 2.0'
 	gem 'spork-rails', github: 'sporkrb/spork-rails' 
 	gem 'factory_girl_rails', '1.0'
-	gem 'faker', '0.3.1'
 end
 
 # Using Spork to speed up autotesting
