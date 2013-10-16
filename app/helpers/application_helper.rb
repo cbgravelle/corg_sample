@@ -19,7 +19,8 @@ module ApplicationHelper
 	end
 
 	def micropost_delete_link(input)
-		if current_user?(input.user)
+		user = input.user rescue User.find(input.user_id)
+		if current_user?(user)
 			link_to "delete", input, 
 					:method => :delete, 
 					:confirm => "You sure?",
