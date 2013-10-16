@@ -14,4 +14,17 @@ module ApplicationHelper
 		image_tag("logo.png", :alt=> "Corg_Sample", :class => "logo round")
 	end
 
+	def dotdot(input, chars)
+		input.length < chars ? input.chomp : input[0...chars].chomp + "..."
+	end
+
+	def micropost_delete_link(input)
+		if current_user?(input.user)
+			link_to "delete", input, 
+					:method => :delete, 
+					:confirm => "You sure?",
+					:title => "Delete '" + dotdot(input.content, 30).gsub(/\r\n/, ' ') + "'"
+		end
+	end
+
 end

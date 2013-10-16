@@ -106,6 +106,7 @@ describe UsersController do
 
     before (:each) do
       @user = Factory(:user)
+      include ApplicationHelper
     end
 
     it "should be successful" do
