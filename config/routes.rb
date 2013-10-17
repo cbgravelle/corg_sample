@@ -1,8 +1,14 @@
 CorgSample::Application.routes.draw do
 
-  resources :users
-  resources :sessions, :only => [:new, :create, :destroy]
-  resources :microposts, :only => [:create, :destroy]
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+  
+  resources :sessions,      :only => [:new, :create, :destroy]
+  resources :microposts,    :only => [:create, :destroy]
+  resources :relationships, :only => [:create, :destroy]
 
   root 'pages#home'
 
@@ -35,12 +41,12 @@ CorgSample::Application.routes.draw do
   # Example resource route with options:
   #   resources :products do
   #     member do
-  #       get 'short'
+  #       get 'short' (/products/1/short)
   #       post 'toggle'
   #     end
   #
   #     collection do
-  #       get 'sold'
+  #       get 'sold'   (/products/sold)
   #     end
   #   end
 
