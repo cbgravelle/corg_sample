@@ -19,26 +19,29 @@ class Micropost < ActiveRecord::Base
 
 	default_scope { order('microposts.created_at DESC') }
 
-	def self.from_users_followed_by(user)
-		followed_user_ids = "SELECT followed_id FROM relationships
-                         WHERE follower_id = :user_id"
-    	where("user_id IN (#{followed_user_ids}) OR user_id = :user_id", 
-          		user_id: user.id)
+	scope :from_users_followed_by, lambda { |user| followed_by(user)}
+
+#	def self.from_users_followed_by(user)
+#		followed_user_ids = "SELECT followed_id FROM relationships
+ #                        	 WHERE follower_id = :user_id"
+ #   	where("user_id IN (#{followed_user_ids}) OR user_id = :user_id", 
+ #         		user_id: user.id)
 
 		# followed_ids = user.following.map(&:id).join(", ")
 		# where("user_id IN (#{followed_ids}) OR user_id = ?", user)
+#	end
 
-		# if followed_ids.blank?
-		# 	 where("user_id = ?", user)
-		# else where("user_id IN (#{followed_ids}) OR user_id = ?", user)
-		# end
+	private
+
+		def self.followed_by(user)
+			followed_ids = %(SELECT followed_id FROM relationships
+                         	 WHERE follower_id = :user_id)
+			where("user_id IN (#{followed_ids}) OR user_id = :user_id",
+				  :user_id => user)
+
+		end
 
 
-		# Micropost.where("user_id IN (#{followed_ids}) OR user_id = ?", user)
-		# Micropost.where("user_id = ? OR user_id = ?", followed_ids, user)
-		# followed_ids = %(SELECT followed_id FROM relationships 
-        #             	 WHERE follower_id = :user_id)
-		
-	end
+
 
 end
